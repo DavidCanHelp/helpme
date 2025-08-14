@@ -19,7 +19,6 @@ go.work
 go.work.sum
 
 # Build output
-helpme
 /helpme
 dist/
 build/

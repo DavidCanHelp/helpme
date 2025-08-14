@@ -275,6 +275,909 @@
         ]
       }
     },
+    "DE": {
+      "name": "Germany",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency (Police, Fire, Medical)"
+        },
+        "police": {
+          "number": "110",
+          "description": "Police emergency"
+        },
+        "medical": {
+          "number": "116 117",
+          "description": "Non-emergency medical service"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Telefonseelsorge",
+            "number": "0800 111 0 111 or 0800 111 0 222",
+            "description": "24/7 crisis counseling",
+            "website": "https://www.telefonseelsorge.de"
+          },
+          {
+            "name": "Nummer gegen Kummer (Youth)",
+            "number": "116 111",
+            "description": "Children and youth helpline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Poison Emergency",
+            "number": "030 19240",
+            "description": "Berlin poison control (check local centers)"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Hilfetelefon Gewalt gegen Frauen",
+            "number": "08000 116 016",
+            "description": "24/7 violence against women helpline"
+          }
+        ]
+      }
+    },
+    "FR": {
+      "name": "France",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "European emergency number"
+        },
+        "medical": {
+          "number": "15",
+          "description": "SAMU - Medical emergencies"
+        },
+        "police": {
+          "number": "17",
+          "description": "Police emergency"
+        },
+        "fire": {
+          "number": "18",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Suicide Écoute",
+            "number": "01 45 39 40 00",
+            "description": "24/7 suicide prevention"
+          },
+          {
+            "name": "3114",
+            "number": "3114",
+            "description": "National suicide prevention hotline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Centre Antipoison",
+            "number": "01 40 05 48 48",
+            "description": "Paris poison control"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Violences Femmes Info",
+            "number": "3919",
+            "description": "Violence against women"
+          }
+        ],
+        "child_abuse": [
+          {
+            "name": "Enfance en Danger",
+            "number": "119",
+            "description": "Child abuse hotline"
+          }
+        ]
+      }
+    },
+    "ES": {
+      "name": "Spain",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "091",
+          "description": "National Police"
+        },
+        "medical": {
+          "number": "061",
+          "description": "Medical emergencies"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Teléfono de la Esperanza",
+            "number": "717 003 717",
+            "description": "24/7 crisis support"
+          },
+          {
+            "name": "024 Línea de Atención a la Conducta Suicida",
+            "number": "024",
+            "description": "Suicide prevention line"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "016",
+            "number": "016",
+            "description": "Gender violence helpline"
+          }
+        ]
+      }
+    },
+    "IT": {
+      "name": "Italy",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "medical": {
+          "number": "118",
+          "description": "Medical emergency"
+        },
+        "fire": {
+          "number": "115",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Telefono Amico",
+            "number": "02 2327 2327",
+            "description": "Crisis support"
+          },
+          {
+            "name": "Samaritans Onlus",
+            "number": "06 77208977",
+            "description": "Emotional support"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Antiviolenza Donne",
+            "number": "1522",
+            "description": "Violence against women"
+          }
+        ]
+      }
+    },
+    "NL": {
+      "name": "Netherlands",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "non_emergency": {
+          "number": "0900-8844",
+          "description": "Non-emergency police"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "113 Zelfmoordpreventie",
+            "number": "113 or 0800-0113",
+            "description": "Suicide prevention",
+            "website": "https://www.113.nl"
+          },
+          {
+            "name": "De Luisterlijn",
+            "number": "088 0767 000",
+            "description": "24/7 emotional support"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Veilig Thuis",
+            "number": "0800-2000",
+            "description": "Domestic violence and child abuse"
+          }
+        ]
+      }
+    },
+    "BE": {
+      "name": "Belgium",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "101",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "100",
+          "description": "Medical emergency and fire"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Centre de Prévention du Suicide",
+            "number": "0800 32 123",
+            "description": "Suicide prevention (French)"
+          },
+          {
+            "name": "Zelfmoordlijn",
+            "number": "1813",
+            "description": "Suicide prevention (Dutch)",
+            "website": "https://www.zelfmoord1813.be"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Antigifcentrum",
+            "number": "070 245 245",
+            "description": "Poison control center"
+          }
+        ]
+      }
+    },
+    "CH": {
+      "name": "Switzerland",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "117",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "144",
+          "description": "Medical emergency"
+        },
+        "fire": {
+          "number": "118",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Die Dargebotene Hand",
+            "number": "143",
+            "description": "24/7 crisis support",
+            "website": "https://www.143.ch"
+          },
+          {
+            "name": "Pro Juventute",
+            "number": "147",
+            "description": "Youth helpline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Tox Info Suisse",
+            "number": "145",
+            "description": "Poison emergency"
+          }
+        ]
+      }
+    },
+    "AT": {
+      "name": "Austria",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "133",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "144",
+          "description": "Medical emergency"
+        },
+        "fire": {
+          "number": "122",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Telefonseelsorge",
+            "number": "142",
+            "description": "24/7 crisis counseling"
+          },
+          {
+            "name": "Rat auf Draht",
+            "number": "147",
+            "description": "Youth helpline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Vergiftungsinformationszentrale",
+            "number": "01 406 43 43",
+            "description": "Poison information center"
+          }
+        ]
+      }
+    },
+    "SE": {
+      "name": "Sweden",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "medical_info": {
+          "number": "1177",
+          "description": "Healthcare information"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Mind Självmordslinjen",
+            "number": "90101",
+            "description": "Suicide prevention line",
+            "website": "https://mind.se"
+          },
+          {
+            "name": "BRIS",
+            "number": "116 111",
+            "description": "Children's helpline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Giftinformationscentralen",
+            "number": "010-456 6700",
+            "description": "Poison information"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Kvinnofridslinjen",
+            "number": "020-50 50 50",
+            "description": "Violence against women support"
+          }
+        ]
+      }
+    },
+    "NO": {
+      "name": "Norway",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "113",
+          "description": "Medical emergency"
+        },
+        "fire": {
+          "number": "110",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Mental Helse",
+            "number": "116 123",
+            "description": "24/7 crisis support"
+          },
+          {
+            "name": "Kirkens SOS",
+            "number": "22 40 00 40",
+            "description": "Crisis counseling"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Giftinformasjonen",
+            "number": "22 59 13 00",
+            "description": "Poison information"
+          }
+        ]
+      }
+    },
+    "DK": {
+      "name": "Denmark",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "medical_info": {
+          "number": "1813",
+          "description": "Medical helpline (Copenhagen region)"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Livslinien",
+            "number": "70 201 201",
+            "description": "Suicide prevention",
+            "website": "https://www.livslinien.dk"
+          },
+          {
+            "name": "BørneTelefonen",
+            "number": "116 111",
+            "description": "Children's helpline"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Giftlinjen",
+            "number": "82 12 12 12",
+            "description": "Poison hotline"
+          }
+        ]
+      }
+    },
+    "FI": {
+      "name": "Finland",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "medical_info": {
+          "number": "116 117",
+          "description": "Medical helpline"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "MIELI Mental Health Finland",
+            "number": "09 2525 0111",
+            "description": "Crisis helpline",
+            "website": "https://mieli.fi"
+          },
+          {
+            "name": "Sekasin-chat",
+            "description": "Youth mental health chat service",
+            "website": "https://sekasin247.fi"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Myrkytystietokeskus",
+            "number": "0800 147 111",
+            "description": "Poison information center"
+          }
+        ]
+      }
+    },
+    "IS": {
+      "name": "Iceland",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "medical_info": {
+          "number": "1700",
+          "description": "Medical on-call service"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Hjálparsími Rauða krossins",
+            "number": "1717",
+            "description": "Red Cross helpline",
+            "website": "https://www.raudikrossinn.is"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Kvennaathvarfið",
+            "number": "561 1205",
+            "description": "Women's shelter"
+          }
+        ]
+      }
+    },
+    "JP": {
+      "name": "Japan",
+      "emergency": {
+        "police": {
+          "number": "110",
+          "description": "Police"
+        },
+        "fire_medical": {
+          "number": "119",
+          "description": "Fire and medical emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "TELL Lifeline",
+            "number": "03-5774-0992",
+            "description": "English-speaking crisis support",
+            "website": "https://telljp.com"
+          },
+          {
+            "name": "Inochi no Denwa",
+            "number": "0570-783-556",
+            "description": "24/7 suicide prevention"
+          },
+          {
+            "name": "Yorisoi Hotline",
+            "number": "0120-279-338",
+            "description": "24/7 general support"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Japan Poison Information Center",
+            "number": "029-852-9999",
+            "description": "Poison emergency (Tsukuba)"
+          }
+        ]
+      }
+    },
+    "KR": {
+      "name": "South Korea",
+      "emergency": {
+        "police": {
+          "number": "112",
+          "description": "Police"
+        },
+        "fire_medical": {
+          "number": "119",
+          "description": "Fire and medical emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Lifeline Korea",
+            "number": "1588-9191",
+            "description": "24/7 suicide prevention"
+          },
+          {
+            "name": "Hope Call 129",
+            "number": "129",
+            "description": "Mental health support"
+          },
+          {
+            "name": "Youth Helpline",
+            "number": "1388",
+            "description": "Youth crisis support"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Women's Hotline",
+            "number": "1366",
+            "description": "Domestic violence support"
+          }
+        ]
+      }
+    },
+    "SG": {
+      "name": "Singapore",
+      "emergency": {
+        "police": {
+          "number": "999",
+          "description": "Police"
+        },
+        "fire_medical": {
+          "number": "995",
+          "description": "Fire and medical emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Samaritans of Singapore",
+            "number": "1800-221-4444",
+            "description": "24/7 suicide prevention"
+          },
+          {
+            "name": "National Care Hotline",
+            "number": "1800-202-6868",
+            "description": "Mental health support"
+          },
+          {
+            "name": "TOUCHline",
+            "number": "1800-377-2252",
+            "description": "Counseling helpline"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "AWARE Women's Helpline",
+            "number": "1800-777-5555",
+            "description": "Support for women"
+          }
+        ]
+      }
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "emergency": {
+        "general": {
+          "number": "111",
+          "description": "Police, Fire, Medical emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Lifeline",
+            "number": "0800 543 354",
+            "description": "24/7 crisis support"
+          },
+          {
+            "name": "Suicide Crisis Helpline",
+            "number": "0508 828 865",
+            "description": "Suicide prevention"
+          },
+          {
+            "name": "Youthline",
+            "number": "0800 376 633",
+            "text": "Text 234",
+            "description": "Youth support"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "National Poisons Centre",
+            "number": "0800 764 766",
+            "description": "24/7 poison advice"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Women's Refuge",
+            "number": "0800 733 843",
+            "description": "Domestic violence support"
+          }
+        ]
+      }
+    },
+    "IE": {
+      "name": "Ireland",
+      "emergency": {
+        "general": {
+          "number": "112 or 999",
+          "description": "General emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Samaritans Ireland",
+            "number": "116 123",
+            "description": "24/7 emotional support"
+          },
+          {
+            "name": "Pieta House",
+            "number": "1800 247 247",
+            "text": "Text HELP to 51444",
+            "description": "Suicide and self-harm crisis support"
+          },
+          {
+            "name": "Childline",
+            "number": "1800 66 66 66",
+            "description": "Support for children"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Women's Aid",
+            "number": "1800 341 900",
+            "description": "24/7 domestic violence helpline"
+          }
+        ]
+      }
+    },
+    "PT": {
+      "name": "Portugal",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "SOS Voz Amiga",
+            "number": "213 544 545",
+            "description": "Daily emotional support (4pm-12am)"
+          },
+          {
+            "name": "Conversa Amiga",
+            "number": "808 237 327",
+            "description": "Crisis support"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "CIAV",
+            "number": "800 250 250",
+            "description": "Poison control center"
+          }
+        ]
+      }
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "113",
+          "description": "Police"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "SOS Détresse",
+            "number": "45 45 45",
+            "description": "Crisis helpline",
+            "website": "https://454545.lu"
+          },
+          {
+            "name": "Kanner-Jugendtelefon",
+            "number": "116 111",
+            "description": "Children and youth helpline"
+          }
+        ]
+      }
+    },
+    "GR": {
+      "name": "Greece",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "General emergency"
+        },
+        "police": {
+          "number": "100",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "166",
+          "description": "Medical emergency"
+        },
+        "fire": {
+          "number": "199",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Suicide Help Greece",
+            "number": "1018",
+            "description": "24/7 suicide prevention"
+          },
+          {
+            "name": "KLIMAKA",
+            "number": "1018 or 210 3417162",
+            "description": "Crisis intervention"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "SOS Helpline",
+            "number": "15900",
+            "description": "Violence against women"
+          }
+        ]
+      }
+    },
+    "IL": {
+      "name": "Israel",
+      "emergency": {
+        "police": {
+          "number": "100",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "101",
+          "description": "Magen David Adom (ambulance)"
+        },
+        "fire": {
+          "number": "102",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "ERAN",
+            "number": "1201",
+            "description": "Emotional support hotline",
+            "website": "https://en.eran.org.il"
+          },
+          {
+            "name": "NATAL",
+            "number": "1-800-363-363",
+            "description": "Trauma and PTSD support"
+          },
+          {
+            "name": "Sahar",
+            "number": "*6266",
+            "description": "Crisis support (Hebrew/Arabic)"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Women's Hotline",
+            "number": "1-800-353-300",
+            "description": "Violence against women"
+          }
+        ]
+      }
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "emergency": {
+        "general": {
+          "number": "999",
+          "description": "Police"
+        },
+        "medical": {
+          "number": "998",
+          "description": "Ambulance"
+        },
+        "fire": {
+          "number": "997",
+          "description": "Fire department"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "National Wellbeing Helpline",
+            "number": "800-4673",
+            "description": "Mental health support"
+          },
+          {
+            "name": "Lighthouse Arabia Helpline",
+            "number": "04 380 2088",
+            "description": "Mental health crisis support"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "DFWAC Helpline",
+            "number": "800-111",
+            "description": "Domestic violence support"
+          }
+        ],
+        "child_abuse": [
+          {
+            "name": "Child Protection Hotline",
+            "number": "800-988",
+            "description": "Report child abuse"
+          }
+        ]
+      }
+    },
     "EU": {
       "name": "European Union",
       "emergency": {

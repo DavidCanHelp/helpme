@@ -112,9 +112,24 @@ var listLocationsCmd = &cobra.Command{
 	Use:   "list-locations",
 	Short: "List all available locations",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Available locations:")
-		for code, loc := range data.Data.Locations {
-			fmt.Printf("  %s - %s\n", code, loc.Name)
+		regions := map[string][]string{
+			"North America": {"US", "CA"},
+			"Europe": {"UK", "IE", "DE", "FR", "ES", "IT", "NL", "BE", "CH", "AT", 
+			          "SE", "NO", "DK", "FI", "IS", "PT", "LU", "GR", "EU"},
+			"Asia-Pacific": {"JP", "KR", "SG", "AU", "NZ"},
+			"Middle East": {"IL", "AE"},
+			"Africa": {"ZA"},
+		}
+		
+		fmt.Println("Available locations by region:\n")
+		for region, codes := range regions {
+			color.New(color.FgCyan, color.Bold).Printf("%s:\n", region)
+			for _, code := range codes {
+				if loc, ok := data.Data.Locations[code]; ok {
+					fmt.Printf("  %s - %s\n", code, loc.Name)
+				}
+			}
+			fmt.Println()
 		}
 	},
 }
