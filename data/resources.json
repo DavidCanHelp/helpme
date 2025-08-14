@@ -1,0 +1,298 @@
+{
+  "locations": {
+    "US": {
+      "name": "United States",
+      "emergency": {
+        "general": {
+          "number": "911",
+          "description": "General emergency (Police, Fire, Medical)"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "988 Suicide & Crisis Lifeline",
+            "number": "988",
+            "text": "Text 'HELLO' to 741741",
+            "description": "24/7 crisis support",
+            "website": "https://988lifeline.org"
+          },
+          {
+            "name": "SAMHSA National Helpline",
+            "number": "1-800-662-4357",
+            "description": "Treatment referral and information service for mental health and substance use"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Poison Control",
+            "number": "1-800-222-1222",
+            "description": "24/7 poison emergency assistance",
+            "website": "https://www.poison.org"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "National Domestic Violence Hotline",
+            "number": "1-800-799-7233",
+            "text": "Text 'START' to 88788",
+            "description": "24/7 confidential support",
+            "website": "https://www.thehotline.org"
+          }
+        ],
+        "child_abuse": [
+          {
+            "name": "Childhelp National Child Abuse Hotline",
+            "number": "1-800-422-4453",
+            "description": "24/7 crisis intervention"
+          }
+        ],
+        "sexual_assault": [
+          {
+            "name": "RAINN National Sexual Assault Hotline",
+            "number": "1-800-656-4673",
+            "description": "24/7 confidential support",
+            "website": "https://www.rainn.org"
+          }
+        ],
+        "veterans": [
+          {
+            "name": "Veterans Crisis Line",
+            "number": "988, Press 1",
+            "text": "Text 838255",
+            "description": "24/7 support for veterans",
+            "website": "https://www.veteranscrisisline.net"
+          }
+        ],
+        "lgbtq": [
+          {
+            "name": "Trevor Lifeline",
+            "number": "1-866-488-7386",
+            "text": "Text 'START' to 678-678",
+            "description": "24/7 crisis support for LGBTQ youth"
+          }
+        ],
+        "substance_abuse": [
+          {
+            "name": "SAMHSA National Helpline",
+            "number": "1-800-662-4357",
+            "description": "24/7 treatment referral service"
+          }
+        ]
+      }
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "emergency": {
+        "general": {
+          "number": "999",
+          "description": "General emergency (Police, Fire, Medical)"
+        },
+        "non_emergency_medical": {
+          "number": "111",
+          "description": "Non-emergency medical advice"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Samaritans",
+            "number": "116 123",
+            "description": "24/7 emotional support",
+            "website": "https://www.samaritans.org"
+          },
+          {
+            "name": "Crisis Text Line",
+            "text": "Text 'SHOUT' to 85258",
+            "description": "24/7 text support"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "National Poisons Information Service",
+            "number": "111",
+            "description": "Poison emergency advice"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "National Domestic Abuse Helpline",
+            "number": "0808 2000 247",
+            "description": "24/7 support for women"
+          }
+        ],
+        "child_abuse": [
+          {
+            "name": "NSPCC Helpline",
+            "number": "0808 800 5000",
+            "description": "Child protection helpline"
+          },
+          {
+            "name": "Childline",
+            "number": "0800 1111",
+            "description": "Support for children and young people"
+          }
+        ]
+      }
+    },
+    "ZA": {
+      "name": "South Africa",
+      "emergency": {
+        "general": {
+          "number": "10111",
+          "description": "Police emergency"
+        },
+        "medical": {
+          "number": "10177",
+          "description": "Medical emergency"
+        },
+        "cell_emergency": {
+          "number": "112",
+          "description": "Emergency from mobile phone"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "SADAG Suicide Crisis Line",
+            "number": "0800 567 567",
+            "description": "24/7 crisis support"
+          },
+          {
+            "name": "Lifeline South Africa",
+            "number": "0861 322 322",
+            "description": "24/7 counseling"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Poison Information Helpline",
+            "number": "0861 555 777",
+            "description": "24/7 poison emergency"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "GBV Command Centre",
+            "number": "0800 428 428",
+            "sms": "SMS 'help' to 31531",
+            "description": "Gender-based violence support"
+          }
+        ],
+        "child_abuse": [
+          {
+            "name": "Childline South Africa",
+            "number": "0800 055 555",
+            "description": "24/7 child protection"
+          }
+        ]
+      }
+    },
+    "AU": {
+      "name": "Australia",
+      "emergency": {
+        "general": {
+          "number": "000",
+          "description": "General emergency (Police, Fire, Medical)"
+        },
+        "cell_emergency": {
+          "number": "112",
+          "description": "Emergency from mobile phone"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Lifeline Australia",
+            "number": "13 11 14",
+            "description": "24/7 crisis support",
+            "website": "https://www.lifeline.org.au"
+          },
+          {
+            "name": "Beyond Blue",
+            "number": "1300 22 4636",
+            "description": "Mental health support"
+          },
+          {
+            "name": "Kids Helpline",
+            "number": "1800 55 1800",
+            "description": "Counseling for young people 5-25"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Poisons Information Centre",
+            "number": "13 11 26",
+            "description": "24/7 poison emergency advice"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "1800RESPECT",
+            "number": "1800 737 732",
+            "description": "24/7 sexual assault and domestic violence support"
+          }
+        ]
+      }
+    },
+    "CA": {
+      "name": "Canada",
+      "emergency": {
+        "general": {
+          "number": "911",
+          "description": "General emergency (Police, Fire, Medical)"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "Talk Suicide Canada",
+            "number": "1-833-456-4566",
+            "text": "Text 45645",
+            "description": "24/7 suicide prevention",
+            "website": "https://talksuicide.ca"
+          },
+          {
+            "name": "Kids Help Phone",
+            "number": "1-800-668-6868",
+            "text": "Text 'CONNECT' to 686868",
+            "description": "Support for young people"
+          }
+        ],
+        "poison_control": [
+          {
+            "name": "Poison Control",
+            "number": "1-844-764-7669",
+            "description": "24/7 poison emergency (varies by province)"
+          }
+        ],
+        "domestic_violence": [
+          {
+            "name": "Assaulted Women's Helpline",
+            "number": "1-866-863-0511",
+            "description": "24/7 support (Ontario)"
+          }
+        ]
+      }
+    },
+    "EU": {
+      "name": "European Union",
+      "emergency": {
+        "general": {
+          "number": "112",
+          "description": "Universal European emergency number"
+        }
+      },
+      "resources": {
+        "mental_health": [
+          {
+            "name": "European Emergency Number",
+            "number": "112",
+            "description": "Can connect to local crisis services"
+          }
+        ]
+      },
+      "note": "Specific resources vary by country. Set your specific EU country for detailed local resources."
+    }
+  }
+}
