@@ -1,0 +1,311 @@
+{
+  "zip_to_city": {
+    "10001": {"city": "New York", "state": "NY", "county": "New York"},
+    "10002": {"city": "New York", "state": "NY", "county": "New York"},
+    "10003": {"city": "New York", "state": "NY", "county": "New York"},
+    "10004": {"city": "New York", "state": "NY", "county": "New York"},
+    "10005": {"city": "New York", "state": "NY", "county": "New York"},
+    "10006": {"city": "New York", "state": "NY", "county": "New York"},
+    "10007": {"city": "New York", "state": "NY", "county": "New York"},
+    "10008": {"city": "New York", "state": "NY", "county": "New York"},
+    "10009": {"city": "New York", "state": "NY", "county": "New York"},
+    "10010": {"city": "New York", "state": "NY", "county": "New York"},
+    "10011": {"city": "New York", "state": "NY", "county": "New York"},
+    "10012": {"city": "New York", "state": "NY", "county": "New York"},
+    "10013": {"city": "New York", "state": "NY", "county": "New York"},
+    "10014": {"city": "New York", "state": "NY", "county": "New York"},
+    "90001": {"city": "Los Angeles", "state": "CA", "county": "Los Angeles"},
+    "90002": {"city": "Los Angeles", "state": "CA", "county": "Los Angeles"},
+    "90003": {"city": "Los Angeles", "state": "CA", "county": "Los Angeles"},
+    "90004": {"city": "Los Angeles", "state": "CA", "county": "Los Angeles"},
+    "60601": {"city": "Chicago", "state": "IL", "county": "Cook"},
+    "60602": {"city": "Chicago", "state": "IL", "county": "Cook"},
+    "60603": {"city": "Chicago", "state": "IL", "county": "Cook"},
+    "60604": {"city": "Chicago", "state": "IL", "county": "Cook"},
+    "60605": {"city": "Chicago", "state": "IL", "county": "Cook"},
+    "77001": {"city": "Houston", "state": "TX", "county": "Harris"},
+    "77002": {"city": "Houston", "state": "TX", "county": "Harris"},
+    "77003": {"city": "Houston", "state": "TX", "county": "Harris"},
+    "85001": {"city": "Phoenix", "state": "AZ", "county": "Maricopa"},
+    "85002": {"city": "Phoenix", "state": "AZ", "county": "Maricopa"},
+    "85003": {"city": "Phoenix", "state": "AZ", "county": "Maricopa"},
+    "19101": {"city": "Philadelphia", "state": "PA", "county": "Philadelphia"},
+    "19102": {"city": "Philadelphia", "state": "PA", "county": "Philadelphia"},
+    "19103": {"city": "Philadelphia", "state": "PA", "county": "Philadelphia"},
+    "78201": {"city": "San Antonio", "state": "TX", "county": "Bexar"},
+    "78202": {"city": "San Antonio", "state": "TX", "county": "Bexar"},
+    "92101": {"city": "San Diego", "state": "CA", "county": "San Diego"},
+    "92102": {"city": "San Diego", "state": "CA", "county": "San Diego"},
+    "75201": {"city": "Dallas", "state": "TX", "county": "Dallas"},
+    "75202": {"city": "Dallas", "state": "TX", "county": "Dallas"},
+    "95101": {"city": "San Jose", "state": "CA", "county": "Santa Clara"},
+    "95110": {"city": "San Jose", "state": "CA", "county": "Santa Clara"},
+    "78701": {"city": "Austin", "state": "TX", "county": "Travis"},
+    "78702": {"city": "Austin", "state": "TX", "county": "Travis"},
+    "32801": {"city": "Orlando", "state": "FL", "county": "Orange"},
+    "32802": {"city": "Orlando", "state": "FL", "county": "Orange"},
+    "94102": {"city": "San Francisco", "state": "CA", "county": "San Francisco"},
+    "94103": {"city": "San Francisco", "state": "CA", "county": "San Francisco"},
+    "94104": {"city": "San Francisco", "state": "CA", "county": "San Francisco"},
+    "94105": {"city": "San Francisco", "state": "CA", "county": "San Francisco"},
+    "98101": {"city": "Seattle", "state": "WA", "county": "King"},
+    "98102": {"city": "Seattle", "state": "WA", "county": "King"},
+    "98103": {"city": "Seattle", "state": "WA", "county": "King"},
+    "98104": {"city": "Seattle", "state": "WA", "county": "King"},
+    "80201": {"city": "Denver", "state": "CO", "county": "Denver"},
+    "80202": {"city": "Denver", "state": "CO", "county": "Denver"},
+    "80203": {"city": "Denver", "state": "CO", "county": "Denver"},
+    "80204": {"city": "Denver", "state": "CO", "county": "Denver"},
+    "02108": {"city": "Boston", "state": "MA", "county": "Suffolk"},
+    "02109": {"city": "Boston", "state": "MA", "county": "Suffolk"},
+    "02110": {"city": "Boston", "state": "MA", "county": "Suffolk"},
+    "02111": {"city": "Boston", "state": "MA", "county": "Suffolk"},
+    "20001": {"city": "Washington", "state": "DC", "county": "District of Columbia"},
+    "20002": {"city": "Washington", "state": "DC", "county": "District of Columbia"},
+    "20003": {"city": "Washington", "state": "DC", "county": "District of Columbia"},
+    "33101": {"city": "Miami", "state": "FL", "county": "Miami-Dade"},
+    "33102": {"city": "Miami", "state": "FL", "county": "Miami-Dade"},
+    "33109": {"city": "Miami Beach", "state": "FL", "county": "Miami-Dade"},
+    "30301": {"city": "Atlanta", "state": "GA", "county": "Fulton"},
+    "30302": {"city": "Atlanta", "state": "GA", "county": "Fulton"},
+    "30303": {"city": "Atlanta", "state": "GA", "county": "Fulton"},
+    "97201": {"city": "Portland", "state": "OR", "county": "Multnomah"},
+    "97202": {"city": "Portland", "state": "OR", "county": "Multnomah"},
+    "97203": {"city": "Portland", "state": "OR", "county": "Multnomah"},
+    "97204": {"city": "Portland", "state": "OR", "county": "Multnomah"},
+    "89101": {"city": "Las Vegas", "state": "NV", "county": "Clark"},
+    "89102": {"city": "Las Vegas", "state": "NV", "county": "Clark"},
+    "48201": {"city": "Detroit", "state": "MI", "county": "Wayne"},
+    "48202": {"city": "Detroit", "state": "MI", "county": "Wayne"}
+  },
+  "local_resources": {
+    "New York_NY": {
+      "police_non_emergency": "1-646-610-5000",
+      "fire_non_emergency": "718-999-2000",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "NYU Langone", "main": "1-646-929-7800"},
+        {"name": "Mount Sinai", "main": "1-212-241-6500"},
+        {"name": "NewYork-Presbyterian", "main": "1-212-746-5454"}
+      ]
+    },
+    "Los Angeles_CA": {
+      "police_non_emergency": "1-877-275-5273",
+      "fire_non_emergency": "1-213-485-6185",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Cedars-Sinai", "main": "1-310-423-3277"},
+        {"name": "UCLA Medical Center", "main": "1-310-825-9111"},
+        {"name": "USC Medical Center", "main": "1-323-442-8500"}
+      ]
+    },
+    "Chicago_IL": {
+      "police_non_emergency": "1-312-746-6000",
+      "fire_non_emergency": "1-312-746-4923",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Northwestern Memorial", "main": "1-312-926-2000"},
+        {"name": "Rush University Medical", "main": "1-312-942-5000"},
+        {"name": "UChicago Medicine", "main": "1-773-702-1000"}
+      ]
+    },
+    "Houston_TX": {
+      "police_non_emergency": "1-713-884-3131",
+      "fire_non_emergency": "1-832-394-6700",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Houston Methodist", "main": "1-713-790-3311"},
+        {"name": "Memorial Hermann", "main": "1-713-704-4000"},
+        {"name": "MD Anderson", "main": "1-877-632-6789"}
+      ]
+    },
+    "Phoenix_AZ": {
+      "police_non_emergency": "1-602-262-6151",
+      "fire_non_emergency": "1-602-262-6771",
+      "city_services": "1-602-262-6251",
+      "hospitals": [
+        {"name": "Banner Health", "main": "1-602-839-2000"},
+        {"name": "Mayo Clinic Arizona", "main": "1-480-515-6296"},
+        {"name": "St. Joseph's", "main": "1-602-406-3000"}
+      ]
+    },
+    "Philadelphia_PA": {
+      "police_non_emergency": "1-215-686-8686",
+      "fire_non_emergency": "1-215-686-1313",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Penn Medicine", "main": "1-215-662-4000"},
+        {"name": "Jefferson Health", "main": "1-215-955-6000"},
+        {"name": "Temple University Hospital", "main": "1-215-707-2000"}
+      ]
+    },
+    "San Antonio_TX": {
+      "police_non_emergency": "1-210-207-7273",
+      "fire_non_emergency": "1-210-206-2482",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "University Health", "main": "1-210-358-4000"},
+        {"name": "Methodist Hospital", "main": "1-210-575-4000"},
+        {"name": "Baptist Medical Center", "main": "1-210-297-7000"}
+      ]
+    },
+    "San Diego_CA": {
+      "police_non_emergency": "1-619-531-2000",
+      "fire_non_emergency": "1-619-533-4300",
+      "city_services": "1-619-236-5555",
+      "hospitals": [
+        {"name": "UC San Diego Health", "main": "1-619-543-6222"},
+        {"name": "Scripps Mercy", "main": "1-619-294-8111"},
+        {"name": "Sharp Memorial", "main": "1-858-939-3400"}
+      ]
+    },
+    "Dallas_TX": {
+      "police_non_emergency": "1-214-671-3001",
+      "fire_non_emergency": "1-214-670-4111",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Parkland Hospital", "main": "1-214-590-8000"},
+        {"name": "UT Southwestern", "main": "1-214-648-3111"},
+        {"name": "Baylor University Medical", "main": "1-214-820-0111"}
+      ]
+    },
+    "San Jose_CA": {
+      "police_non_emergency": "1-408-277-8900",
+      "fire_non_emergency": "1-408-277-4444",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Santa Clara Valley Medical", "main": "1-408-885-5000"},
+        {"name": "Good Samaritan", "main": "1-408-559-2011"},
+        {"name": "Regional Medical Center", "main": "1-408-259-5000"}
+      ]
+    },
+    "Austin_TX": {
+      "police_non_emergency": "311",
+      "fire_non_emergency": "1-512-974-0130",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Dell Seton Medical", "main": "1-512-324-7000"},
+        {"name": "St. David's Medical", "main": "1-512-476-7111"},
+        {"name": "Austin Regional Clinic", "main": "1-512-272-4636"}
+      ]
+    },
+    "Orlando_FL": {
+      "police_non_emergency": "1-321-235-5300",
+      "fire_non_emergency": "1-407-246-2390",
+      "city_services": "1-407-246-2273",
+      "hospitals": [
+        {"name": "Orlando Health", "main": "1-321-841-5111"},
+        {"name": "AdventHealth Orlando", "main": "1-407-303-5600"},
+        {"name": "Nemours Children's", "main": "1-407-567-4000"}
+      ]
+    },
+    "San Francisco_CA": {
+      "police_non_emergency": "1-415-553-0123",
+      "fire_non_emergency": "1-415-558-3200",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "UCSF Medical Center", "main": "1-415-476-1000"},
+        {"name": "SF General Hospital", "main": "1-415-206-8000"},
+        {"name": "Kaiser Permanente SF", "main": "1-415-833-2000"}
+      ]
+    },
+    "Seattle_WA": {
+      "police_non_emergency": "1-206-625-5011",
+      "fire_non_emergency": "1-206-386-1400",
+      "city_services": "1-206-684-2489",
+      "hospitals": [
+        {"name": "UW Medical Center", "main": "1-206-598-3300"},
+        {"name": "Swedish Medical Center", "main": "1-206-386-6000"},
+        {"name": "Harborview Medical", "main": "1-206-744-3000"}
+      ]
+    },
+    "Denver_CO": {
+      "police_non_emergency": "1-720-913-2000",
+      "fire_non_emergency": "1-720-913-2400",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Denver Health", "main": "1-303-436-6000"},
+        {"name": "Presbyterian/St. Joseph", "main": "1-303-218-8510"},
+        {"name": "National Jewish Health", "main": "1-303-388-4461"}
+      ]
+    },
+    "Boston_MA": {
+      "police_non_emergency": "1-617-343-4200",
+      "fire_non_emergency": "1-617-343-3550",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Mass General", "main": "1-617-726-2000"},
+        {"name": "Brigham and Women's", "main": "1-617-732-5500"},
+        {"name": "Boston Medical Center", "main": "1-617-638-8000"}
+      ]
+    },
+    "Washington_DC": {
+      "police_non_emergency": "1-202-737-4404",
+      "fire_non_emergency": "1-202-673-3320",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "MedStar Georgetown", "main": "1-202-444-2000"},
+        {"name": "GW Hospital", "main": "1-202-715-4000"},
+        {"name": "Howard University Hospital", "main": "1-202-865-6100"}
+      ]
+    },
+    "Miami_FL": {
+      "police_non_emergency": "1-305-579-6111",
+      "fire_non_emergency": "1-305-416-5200",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Jackson Memorial", "main": "1-305-585-1111"},
+        {"name": "Mount Sinai Miami", "main": "1-305-674-2121"},
+        {"name": "Baptist Hospital Miami", "main": "1-786-596-1960"}
+      ]
+    },
+    "Miami Beach_FL": {
+      "police_non_emergency": "1-305-673-7900",
+      "fire_non_emergency": "1-305-673-7111",
+      "city_services": "1-305-604-2489",
+      "hospitals": [
+        {"name": "Mount Sinai Miami Beach", "main": "1-305-674-2121"}
+      ]
+    },
+    "Atlanta_GA": {
+      "police_non_emergency": "1-404-546-4900",
+      "fire_non_emergency": "1-404-546-7000",
+      "city_services": "311",
+      "hospitals": [
+        {"name": "Emory University Hospital", "main": "1-404-712-2000"},
+        {"name": "Grady Memorial", "main": "1-404-616-1000"},
+        {"name": "Piedmont Atlanta", "main": "1-404-605-5000"}
+      ]
+    },
+    "Portland_OR": {
+      "police_non_emergency": "1-503-823-3333",
+      "fire_non_emergency": "1-503-823-3700",
+      "city_services": "1-503-823-4000",
+      "hospitals": [
+        {"name": "OHSU Hospital", "main": "1-503-494-8311"},
+        {"name": "Legacy Emanuel", "main": "1-503-413-2200"},
+        {"name": "Providence Portland", "main": "1-503-215-1111"}
+      ]
+    },
+    "Las Vegas_NV": {
+      "police_non_emergency": "1-702-828-3111",
+      "fire_non_emergency": "1-702-383-2888",
+      "city_services": "1-702-229-6011",
+      "hospitals": [
+        {"name": "UMC Las Vegas", "main": "1-702-383-2000"},
+        {"name": "Sunrise Hospital", "main": "1-702-961-5000"},
+        {"name": "Valley Hospital", "main": "1-702-388-4000"}
+      ]
+    },
+    "Detroit_MI": {
+      "police_non_emergency": "1-313-596-2200",
+      "fire_non_emergency": "1-313-596-2900",
+      "city_services": "1-313-224-4678",
+      "hospitals": [
+        {"name": "Henry Ford Hospital", "main": "1-313-916-2600"},
+        {"name": "Detroit Medical Center", "main": "1-313-745-8040"},
+        {"name": "St. John Hospital", "main": "1-313-343-4000"}
+      ]
+    }
+  }
+}

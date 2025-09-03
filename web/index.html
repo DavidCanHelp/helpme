@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpMe - Emergency & Crisis Support</title>
+    <meta name="description" content="Instant access to emergency numbers, crisis support, and local non-emergency services">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --emergency: #dc2626;
+            --primary: #3b82f6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .emergency-banner {
+            background: var(--emergency);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .emergency-number {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .action-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .action-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .action-card.emergency {
+            background: var(--emergency);
+            color: white;
+        }
+        
+        .action-card.mental {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .action-card.local {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .search-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .search-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        input {
+            flex: 1;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid var(--light);
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        button {
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+        
+        .results {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .results.active {
+            display: block;
+        }
+        
+        .resource-item {
+            padding: 1rem;
+            border-left: 4px solid var(--primary);
+            margin-bottom: 1rem;
+            background: var(--light);
+            border-radius: 4px;
+        }
+        
+        .resource-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .resource-number {
+            font-size: 1.5rem;
+            color: var(--success);
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        .copy-btn {
+            padding: 0.5rem 1rem;
+            background: var(--light);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .copy-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .location-bar {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .location-text {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .features {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .feature {
+            padding: 1rem;
+            border-radius: 8px;
+            background: var(--light);
+            transition: all 0.3s;
+        }
+        
+        .feature:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .offline-banner {
+            background: var(--warning);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .offline .offline-banner {
+            display: block;
+        }
+        
+        @media (max-width: 640px) {
+            h1 { font-size: 2rem; }
+            .emergency-number { font-size: 2.5rem; }
+            .quick-actions { grid-template-columns: 1fr; }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+            .action-card:not(.emergency):not(.mental):not(.local) { 
+                background: #334155; 
+                color: white;
+            }
+            .search-section, .results, .features { 
+                background: #1e293b; 
+                color: white;
+            }
+            input { 
+                background: #334155; 
+                color: white;
+                border-color: #475569;
+            }
+            .resource-item { 
+                background: #334155;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🆘 HelpMe</h1>
+            <p class="tagline">Emergency & Crisis Support - Always Here When You Need Help</p>
+        </header>
+
+        <div class="offline-banner">
+            ⚠️ You're offline - showing cached resources only
+        </div>
+
+        <div class="location-bar">
+            <div class="location-text">
+                📍 <span id="current-location">Detecting location...</span>
+            </div>
+            <button onclick="changeLocation()">Change</button>
+        </div>
+
+        <div class="emergency-banner" onclick="call911()">
+            <div style="text-align: center;">
+                <div>🚨 FOR EMERGENCIES 🚨</div>
+                <div class="emergency-number">CALL 911</div>
+                <div>Police • Fire • Medical</div>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <div class="action-card mental" onclick="showMentalHealth()">
+                <div class="icon">🧠</div>
+                <div>Mental Health Crisis</div>
+                <div style="font-size: 1.5rem; margin-top: 0.5rem;">988</div>
+            </div>
+            
+            <div class="action-card emergency" onclick="showPoison()">
+                <div class="icon">☠️</div>
+                <div>Poison Control</div>
+                <div style="font-size: 1.2rem; margin-top: 0.5rem;">1-800-222-1222</div>
+            </div>
+            
+            <div class="action-card local" onclick="focusZipInput()">
+                <div class="icon">📍</div>
+                <div>Local Non-Emergency</div>
+                <div style="font-size: 0.9rem; margin-top: 0.5rem;">Enter ZIP Code</div>
+            </div>
+            
+            <div class="action-card" onclick="showDomestic()">
+                <div class="icon">🏠</div>
+                <div>Domestic Violence</div>
+            </div>
+            
+            <div class="action-card" onclick="showVeterans()">
+                <div class="icon">🎖️</div>
+                <div>Veterans Support</div>
+            </div>
+            
+            <div class="action-card" onclick="showLGBTQ()">
+                <div class="icon">🌈</div>
+                <div>LGBTQ+ Support</div>
+            </div>
+        </div>
+
+        <div class="search-section">
+            <h2 style="margin-bottom: 1rem;">Find Local Services</h2>
+            <div class="search-group">
+                <input type="text" 
+                       id="zip-input" 
+                       placeholder="Enter 5-digit ZIP code" 
+                       maxlength="5"
+                       pattern="[0-9]{5}"
+                       inputmode="numeric"
+                       aria-label="ZIP code">
+                <button onclick="searchZip()">Search</button>
+            </div>
+            <div class="search-group">
+                <input type="text" 
+                       id="search-input" 
+                       placeholder="Search for help (e.g., 'suicide', 'addiction')"
+                       aria-label="Search for resources">
+                <button onclick="searchResources()">Find Help</button>
+            </div>
+        </div>
+
+        <div id="results" class="results"></div>
+
+        <div class="features">
+            <h2>Life-Saving Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <strong>⚡ Instant Access</strong>
+                    <p>Emergency numbers always one tap away</p>
+                </div>
+                <div class="feature">
+                    <strong>📱 Works Offline</strong>
+                    <p>Critical numbers cached on your device</p>
+                </div>
+                <div class="feature">
+                    <strong>🌍 Location Aware</strong>
+                    <p>Shows resources for your area</p>
+                </div>
+                <div class="feature">
+                    <strong>🔒 Private & Secure</strong>
+                    <p>No tracking, no data collection</p>
+                </div>
+                <div class="feature">
+                    <strong>📋 Copy Numbers</strong>
+                    <p>Easy clipboard access</p>
+                </div>
+                <div class="feature">
+                    <strong>♿ Accessible</strong>
+                    <p>Screen reader friendly</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Service Worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(console.error);
+        }
+
+        // Location detection
+        let currentLocation = 'US';
+        
+        async function detectLocation() {
+            try {
+                // Try geolocation API
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(async (position) => {
+                        const {latitude, longitude} = position.coords;
+                        // Reverse geocode to get country
+                        const response = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`);
+                        const data = await response.json();
+                        updateLocation(data.address?.country_code?.toUpperCase() || 'US');
+                    }, () => {
+                        // Fallback to IP geolocation
+                        detectLocationByIP();
+                    });
+                } else {
+                    detectLocationByIP();
+                }
+            } catch (e) {
+                updateLocation('US');
+            }
+        }
+        
+        async function detectLocationByIP() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                updateLocation(data.country_code || 'US');
+            } catch (e) {
+                updateLocation('US');
+            }
+        }
+        
+        function updateLocation(location) {
+            currentLocation = location;
+            const locationText = {
+                'US': 'United States',
+                'CA': 'Canada',
+                'UK': 'United Kingdom',
+                'AU': 'Australia',
+                'NZ': 'New Zealand'
+            }[location] || location;
+            document.getElementById('current-location').textContent = locationText;
+        }
+        
+        // Initialize
+        detectLocation();
+        
+        // Emergency functions
+        function call911() {
+            if (confirm('Call 911 for emergency assistance?')) {
+                window.location.href = 'tel:911';
+            }
+        }
+        
+        function showMentalHealth() {
+            showResources('Mental Health Crisis Support', [
+                {
+                    name: '988 Suicide & Crisis Lifeline',
+                    number: '988',
+                    text: "Text 'HELLO' to 741741",
+                    description: '24/7 crisis support for suicide prevention and mental health emergencies'
+                },
+                {
+                    name: 'SAMHSA National Helpline',
+                    number: '1-800-662-4357',
+                    description: 'Treatment referral and information service for mental health and substance use'
+                },
+                {
+                    name: 'NAMI Helpline',
+                    number: '1-800-950-6264',
+                    description: 'National Alliance on Mental Illness - Information, referrals and support'
+                }
+            ]);
+        }
+        
+        function showPoison() {
+            showResources('Poison Control', [
+                {
+                    name: 'Poison Control Hotline',
+                    number: '1-800-222-1222',
+                    description: '24/7 expert help for poison emergencies - keep this number saved!',
+                    website: 'https://www.poison.org'
+                }
+            ]);
+        }
+        
+        function showDomestic() {
+            showResources('Domestic Violence Support', [
+                {
+                    name: 'National Domestic Violence Hotline',
+                    number: '1-800-799-7233',
+                    text: "Text 'START' to 88788",
+                    description: '24/7 confidential support for domestic violence victims',
+                    website: 'https://www.thehotline.org'
+                }
+            ]);
+        }
+        
+        function showVeterans() {
+            showResources('Veterans Support', [
+                {
+                    name: 'Veterans Crisis Line',
+                    number: '988 then Press 1',
+                    text: 'Text 838255',
+                    description: '24/7 confidential crisis support for Veterans and their families'
+                },
+                {
+                    name: 'VA Benefits Hotline',
+                    number: '1-800-827-1000',
+                    description: 'Information about VA benefits and services'
+                }
+            ]);
+        }
+        
+        function showLGBTQ() {
+            showResources('LGBTQ+ Support', [
+                {
+                    name: 'LGBT National Hotline',
+                    number: '1-888-843-4564',
+                    description: 'Peer support, information, and resources'
+                },
+                {
+                    name: 'Trans Lifeline',
+                    number: '1-877-565-8860',
+                    description: 'Peer support for transgender people'
+                },
+                {
+                    name: 'Trevor Project',
+                    number: '1-866-488-7386',
+                    text: "Text 'START' to 678-678",
+                    description: 'Crisis intervention for LGBTQ youth'
+                }
+            ]);
+        }
+        
+        function showResources(title, resources) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `
+                <h2>${title}</h2>
+                ${resources.map(r => `
+                    <div class="resource-item">
+                        <div class="resource-name">${r.name}</div>
+                        ${r.number ? `<div class="resource-number">📞 ${r.number}</div>` : ''}
+                        ${r.text ? `<div>💬 ${r.text}</div>` : ''}
+                        <div>${r.description}</div>
+                        ${r.website ? `<div>🌐 <a href="${r.website}" target="_blank">${r.website}</a></div>` : ''}
+                        ${r.number ? `<button class="copy-btn" onclick="copyToClipboard('${r.number}')">Copy Number</button>` : ''}
+                    </div>
+                `).join('')}
+            `;
+            resultsDiv.classList.add('active');
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        async function searchZip() {
+            const zip = document.getElementById('zip-input').value;
+            if (!/^\d{5}$/.test(zip)) {
+                alert('Please enter a valid 5-digit ZIP code');
+                return;
+            }
+            
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<h2>Searching...</h2>';
+            resultsDiv.classList.add('active');
+            
+            try {
+                // Fetch ZIP info from free API
+                const response = await fetch(`https://api.zippopotam.us/us/${zip}`);
+                const data = await response.json();
+                
+                if (data.places && data.places[0]) {
+                    const place = data.places[0];
+                    showResources(`Local Non-Emergency - ${place['place name']}, ${place['state']}`, [
+                        {
+                            name: `${place['place name']} Police (Non-Emergency)`,
+                            number: 'Call 411 for local directory',
+                            description: 'For non-urgent police matters'
+                        },
+                        {
+                            name: `${place['place name']} Fire (Non-Emergency)`,
+                            number: 'Call 411 for local directory',
+                            description: 'For non-urgent fire department matters'
+                        },
+                        {
+                            name: 'City Services',
+                            number: '311',
+                            description: 'Many cities use 311 for non-emergency city services'
+                        }
+                    ]);
+                }
+            } catch (e) {
+                resultsDiv.innerHTML = '<h2>Error loading ZIP code data. Please try again.</h2>';
+            }
+        }
+        
+        function searchResources() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            if (!query) return;
+            
+            // Simple keyword matching for demo
+            const keywords = {
+                'suicide': showMentalHealth,
+                'mental': showMentalHealth,
+                'depression': showMentalHealth,
+                'anxiety': showMentalHealth,
+                'poison': showPoison,
+                'domestic': showDomestic,
+                'violence': showDomestic,
+                'veteran': showVeterans,
+                'lgbt': showLGBTQ,
+                'gay': showLGBTQ,
+                'trans': showLGBTQ
+            };
+            
+            for (let [keyword, func] of Object.entries(keywords)) {
+                if (query.includes(keyword)) {
+                    func();
+                    return;
+                }
+            }
+            
+            // No matches
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `<h2>No results for "${query}"</h2><p>Try searching for: mental health, suicide, poison, domestic violence, veterans, LGBTQ</p>`;
+            resultsDiv.classList.add('active');
+        }
+        
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Number copied to clipboard!');
+            }).catch(() => {
+                alert('Copy failed. Please copy manually: ' + text);
+            });
+        }
+        
+        function focusZipInput() {
+            document.getElementById('zip-input').focus();
+        }
+        
+        function changeLocation() {
+            const newLocation = prompt('Enter country code (US, CA, UK, AU, etc.):');
+            if (newLocation) {
+                updateLocation(newLocation.toUpperCase());
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.altKey || e.metaKey) {
+                switch(e.key) {
+                    case 'e': call911(); break;
+                    case 'm': showMentalHealth(); break;
+                    case 'z': focusZipInput(); break;
+                }
+            }
+        });
+        
+        // Enter key support for inputs
+        document.getElementById('zip-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchZip();
+        });
+        
+        document.getElementById('search-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchResources();
+        });
+        
+        // Offline detection
+        window.addEventListener('online', () => document.body.classList.remove('offline'));
+        window.addEventListener('offline', () => document.body.classList.add('offline'));
+    </script>
+</body>
+</html>

@@ -5,6 +5,8 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	
+	"github.com/david/helpme/internal/location"
 )
 
 type Config struct {
@@ -28,7 +30,14 @@ func Load() (*Config, error) {
 	data, err := os.ReadFile(configPath)
 	if err != nil {
 		if os.IsNotExist(err) {
-			return &Config{Location: "US"}, nil
+			// Auto-detect location on first run
+			detectedLocation := location.GetLocationWithFallback("US")
+			cfg := &Config{Location: detectedLocation}
+			
+			// Try to save the auto-detected location
+			_ = cfg.Save() // Ignore error if can't save
+			
+			return cfg, nil
 		}
 		return nil, fmt.Errorf("failed to read config file: %w", err)
 	}
