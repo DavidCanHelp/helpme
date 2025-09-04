@@ -343,6 +343,14 @@
             "website": "https://www.veteranenverband.de/hilfe"
           }
         ],
+        "lgbtq": [
+          {
+            "name": "Antidiskriminierungsstelle des Bundes",
+            "number": "0800 546 546 5",
+            "description": "Mon–Thu: 09:00–15:00",
+            "website": "https://www.antidiskriminierungsstelle.de/DE/wir-beraten-sie/wir-beraten-sie-node.html"
+          }
+        ],
         "substance_abuse": [
           {
             "name": "Sucht- und Drogen-Hotline",
