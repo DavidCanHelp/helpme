@@ -335,6 +335,14 @@
             "website": "https://www.hilfe-portal-missbrauch.de"
           }
         ],
+        "veterans": [
+          {
+            "name": "Hilfeabteilung des Bundes Deutscher EinsatzVeteranen e.V.",
+            "number": "030 209 242 08",
+            "description": "Mon–Fri 08:00–17:00",
+            "website": "https://www.veteranenverband.de/hilfe"
+          }
+        ],
         "substance_abuse": [
           {
             "name": "Sucht- und Drogen-Hotline",
