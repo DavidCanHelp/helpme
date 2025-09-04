@@ -318,6 +318,14 @@
             "number": "08000 116 016",
             "description": "24/7 violence against women helpline"
           }
+        ],
+        "sexual_assault": [
+          {
+            "name": "Hilfe-Telefon Sexueller Missbrauch (Youth)",
+            "number": "0800 22 55 530",
+            "description": "Mon, Wed, Fri: 09:00–14:00; Tues, Thurs: 15:00–20:00",
+            "website": "https://www.hilfe-portal-missbrauch.de"
+          }
         ]
       }
     },
