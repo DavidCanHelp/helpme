@@ -24,13 +24,13 @@ func ShowMainMenu(locationCode string) error {
 		categories := []string{
 			"🚨 Emergency Services",
 			"🧠 Mental Health & Crisis Support",
-			"☠️  Poison Control",
+			"☠️ Poison Control",
 			"🏠 Domestic Violence",
 			"👶 Child Abuse",
 			"🤝 Sexual Assault",
 			"🏥 Substance Abuse",
 			"🌈 LGBTQ Support",
-			"🎖️  Veterans Support",
+			"🎖️ Veterans Support",
 			"🔍 Search Resources",
 			"❌ Exit",
 		}
