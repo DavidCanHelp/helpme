@@ -319,6 +319,14 @@
             "description": "24/7 violence against women helpline"
           }
         ],
+        "child_abuse": [
+          {
+            "name": "Medizinische Kinderschutzhotline",
+            "number": "0800 19 210 00",
+            "description": "24/7 child abuse helpline",
+            "website": "https://kinderschutzhotline.de"
+          }
+        ],
         "sexual_assault": [
           {
             "name": "Hilfe-Telefon Sexueller Missbrauch (Youth)",
