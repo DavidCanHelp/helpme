@@ -188,7 +188,7 @@ This software is provided "AS IS" without warranty of any kind, express or impli
 ### Responsible Use
 - Test the tool when you're NOT in an emergency to familiarize yourself
 - Keep your emergency contacts and medical information current
-- Share this tool with others who might benefit, but ensure they understand its limitations
+- Please help save lives responsibly by sharing this tool with others who might benefit, but ensure they understand its limitations
 - Report issues or incorrect information via GitHub Issues to help improve the tool
 
 ## Contributing
@@ -202,7 +202,7 @@ This software is provided "AS IS" without warranty of any kind, express or impli
 
 ## License
 
-MIT - Free to use, modify, and distribute. Please help save lives responsibly.
+MIT - Free to use, modify, and distribute. See [LICENSE](LICENSE).
 
 ---
 
