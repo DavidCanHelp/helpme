@@ -318,6 +318,64 @@
             "number": "08000 116 016",
             "description": "24/7 violence against women helpline"
           }
+        ],
+        "child_abuse": [
+          {
+            "name": "Medizinische Kinderschutzhotline",
+            "number": "0800 19 210 00",
+            "description": "24/7 child abuse helpline",
+            "website": "https://kinderschutzhotline.de"
+          }
+        ],
+        "sexual_assault": [
+          {
+            "name": "Hilfe-Telefon Sexueller Missbrauch (Youth)",
+            "number": "0800 22 55 530",
+            "description": "Mon, Wed, Fri: 09:00–14:00; Tues, Thurs: 15:00–20:00",
+            "website": "https://www.hilfe-portal-missbrauch.de"
+          }
+        ],
+        "veterans": [
+          {
+            "name": "Hilfeabteilung des Bundes Deutscher EinsatzVeteranen e.V.",
+            "number": "030 209 242 08",
+            "description": "Mon–Fri 08:00–17:00",
+            "website": "https://www.veteranenverband.de/hilfe"
+          }
+        ],
+        "lgbtq": [
+          {
+            "name": "Antidiskriminierungsstelle des Bundes",
+            "number": "0800 546 546 5",
+            "description": "Mon–Thu: 09:00–15:00",
+            "website": "https://www.antidiskriminierungsstelle.de/DE/wir-beraten-sie/wir-beraten-sie-node.html"
+          }
+        ],
+        "substance_abuse": [
+          {
+            "name": "Sucht- und Drogen-Hotline",
+            "number": "01806 313031",
+            "description": "08:00–24:00 (0,20 € per call)",
+            "website": "https://www.bioeg.de/service/infotelefone/sucht-drogen-hotline/"
+          },
+          {
+            "name": "Infotelefon zur Suchtvorbeugung",
+            "number": "0221 89 20 31",
+            "description": "Mon–Thu: 10:00–22:00; Fri–Sun: 10:00–18:00",
+            "website": "https://www.bioeg.de/service/infotelefone/suchtvorbeugung/"
+          },
+          {
+            "name": "Telefonberatung zur Rauchentwöhnung",
+            "number": "0800 8 31 31 31",
+            "description": "Mon–Thu: 10:00–22:00; Fri–Sun: 10:00–18:00",
+            "website": "https://www.bioeg.de/service/infotelefone/rauchentwoehnung/"
+          },
+          {
+            "name": "Telefonberatung zur Glücksspielsucht",
+            "number": "0800 1 37 27 00",
+            "description": "Mon–Thu: 10:00–22:00; Fri–Sun: 10:00–18:00",
+            "website": "https://www.bioeg.de/service/infotelefone/gluecksspielsucht/"
+          }
         ]
       }
     },
